@@ -15,5 +15,5 @@ class deletePlaylist:
     def unfollow_playlist(self):
         self.response = requests.delete(
             self.endpoint,
-            self.header
+            headers=self.header
         )
